@@ -1,5 +1,11 @@
 body{
 	margin: 50px;
+	background: 	white;
+}
+
+#tabs{
+	margin-top:10px;
+	background: #AFEEEE;
 }
 
 img{
@@ -19,4 +25,23 @@ img{
 		position: absolute;
 	margin-left: 50px;
 	top:38px;
+}
+#update{
+	margin-left:39%;
+}
+
+.header{
+	height: 50px;
+	background:#AFEEEE;
+	border: 1px solid  	#87CEFA;
+	border-radius: 5px;
+	margin-left: 37%;
+	margin-right: 42%
+}
+.header span{
+	position: absolute;
+	font-size: 60px;
+	top: 45px;
+	left: 41.5%;
+
 }

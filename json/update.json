@@ -1,0 +1,16 @@
+[
+	{
+		"autor": "Homer",
+		"avatar": "http://www.homersimpsonquotes.com/images/homer.gif",
+		"titulo": "Homer manda y no tu banda",
+		"contenido": "Soy el mas mejor de este lugar.",
+		"fecha": "26/4/2016 12:15"
+	},
+	{
+		"autor": "Pepe",
+		"avatar": "http://img.uefa.com/imgml/TP/players/1/2015/324x324/95417.jpg",
+		"titulo": "Hola soy pepe dice...",
+		"contenido": "A que te piso!! ",
+		"fecha": "26/4/2016 13:25"
+	}
+]

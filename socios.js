@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-
-    //$( "#accordion1").accordion();
-
     $( "#tabs").tabs();
-
 
     $.getJSON("json/myline.json").done(function(messages){
         printmessages(messages,0);
@@ -12,7 +8,9 @@ $(document).ready(function() {
     $.getJSON("json/timeline.json").done(function(messages){
         printmessages(messages,1);
     });
-
+    $.getJSON("json/update.json").done(function(messages){
+        printmessages(messages,2);
+    });
 
     function printmessages(messages,x){
 
@@ -28,18 +26,33 @@ $(document).ready(function() {
                     "<p><span class='contenido'>" + message.contenido + "</span></p>" +
                     "</div>";
         });
+        if (x==0){ //myline.json
 
-        if (x==0){
           $("#accordion-myline").append(html);
           $("#accordion-myline").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
-        }else{
+
+        }else if (x==1){  //timeline.json
+
           $("#accordion-timeline").append(html);
-          $("#accordion-timeline").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });      
+          $("#accordion-timeline").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
+
+        }else if (x==2){  //alertar que hay update.json
+          if (messages!=""){
+
+            $("#update").append("<button id='button'>Nuevos Mensajes</button>");
+            $( "#button" ).button();
+            $( "#button" ).click(function(){
+              $.getJSON("json/update.json").done(function(messages){
+                  printmessages(messages,3);
+              });
+            });
+          }
+
+        }else if (x==3){ //update.json
+
+          $("#update").html("");   //esto quita el boton de actualizar
+          $("#accordion-update").append(html);
+          $("#accordion-update").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
         }
-
-
-
-
-
     };
 });
