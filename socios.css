@@ -1,3 +1,22 @@
 body{
 	margin: 50px;
 }
+
+img{
+	 	height:42px;
+		width: 42px;
+		border: 2px solid black;
+		border-radius: 10px
+}
+
+.autor{
+	position: absolute;
+	margin-left: 20px;
+ 	top: 9px;
+	color: black;
+}
+.titulo{
+		position: absolute;
+	margin-left: 50px;
+	top:38px;
+}

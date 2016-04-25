@@ -1,0 +1,23 @@
+[
+	{
+		"autor": "Homer",
+		"avatar": "http://www.homersimpsonquotes.com/images/homer.gif",
+		"titulo": "Mensje de Homer",
+		"contenido": "Hola me llamo Homero.",
+		"fecha": "25/4/2016 12:15"
+	},
+	{
+		"autor": "anombela",
+		"avatar": "https://es.gravatar.com/userimage/96114687/d935236651741f92562b9b3658f8acb9.jpeg",
+		"titulo": "Segundo Mensaje",
+		"contenido": "hola que tal",
+		"fecha": "24/4/2016 16:18"
+	},
+	{
+		"autor": "anombela",
+		"avatar": "https://es.gravatar.com/userimage/96114687/d935236651741f92562b9b3658f8acb9.jpeg",
+		"titulo": "Tercer Mensaje",
+		"contenido": "a",
+		"fecha": "24/4/2016 16:32"
+	}
+]
