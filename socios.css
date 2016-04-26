@@ -1,0 +1,49 @@
+body{
+	margin: 50px;
+	background: 	white;
+}
+
+#tabs{
+	margin-top:10px;
+	background: #AFEEEE;
+}
+
+img{
+	 	height:42px;
+		width: 42px;
+		border: 2px solid black;
+		border-radius: 10px
+}
+
+.autor{
+	position: absolute;
+	margin-left: 20px;
+ 	top: 9px;
+	color: black;
+}
+.titulo{
+		position: absolute;
+	margin-left: 50px;
+	top:38px;
+}
+#update{
+	margin-left:41%;
+}
+
+.header{
+	psition:relative;
+	height: 65px;
+	width: 200px;
+	background:#AFEEEE;
+	border: 1px solid  	#87CEFA;
+	border-radius: 5px;
+	margin-left: 40.7%;
+
+}
+.header span{
+
+	font-size: 60px;
+	top: 45px;
+	left: 650px;
+
+}
