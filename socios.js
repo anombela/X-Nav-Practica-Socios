@@ -15,6 +15,14 @@ $(document).ready(function() {
     function printmessages(messages,x){
 
         var html = "";
+        var html2 = "";
+
+        if (x==3){
+          $("#update").html("");   //esto quita el boton de actualizar
+          html2 = $("#accordion-timeline").val();
+          $("#accordion-timeline").accordion("destroy");
+        }
+
         messages.forEach(function(message,i){
             html += "<h3>" +
                     "<img src='" + message.avatar + "'>" +
@@ -26,12 +34,15 @@ $(document).ready(function() {
                     "<p><span class='contenido'>" + message.contenido + "</span></p>" +
                     "</div>";
         });
+
+        html = html2 + html;
+
         if (x==0){ //myline.json
 
           $("#accordion-myline").append(html);
           $("#accordion-myline").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
 
-        }else if (x==1){  //timeline.json
+        }else if (x==1 || x==3){  //timeline.json
 
           $("#accordion-timeline").append(html);
           $("#accordion-timeline").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
@@ -47,12 +58,6 @@ $(document).ready(function() {
               });
             });
           }
-
-        }else if (x==3){ //update.json
-
-          $("#update").html("");   //esto quita el boton de actualizar
-          $("#accordion-update").append(html);
-          $("#accordion-update").accordion({ active: true },{ collapsible: true }, { heightStyle: "content" });
         }
     };
 });
